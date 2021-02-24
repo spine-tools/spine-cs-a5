@@ -1,6 +1,6 @@
 {
     "project": {
-        "version": 2,
+        "version": 5,
         "name": "Case Study A5",
         "description": "",
         "specifications": {
@@ -8,21 +8,11 @@
                 {
                     "type": "path",
                     "relative": true,
-                    "path": "spineopt.json"
+                    "path": ".spinetoolbox/specifications/Tool/spineopt.json"
                 }
             ]
         },
         "connections": [
-            {
-                "from": [
-                    "input",
-                    "right"
-                ],
-                "to": [
-                    "SpineOpt",
-                    "left"
-                ]
-            },
             {
                 "from": [
                     "SpineOpt",
@@ -32,6 +22,16 @@
                     "output",
                     "left"
                 ]
+            },
+            {
+                "from": [
+                    "input",
+                    "right"
+                ],
+                "to": [
+                    "SpineOpt",
+                    "left"
+                ]
             }
         ]
     },
@@ -39,8 +39,8 @@
         "input": {
             "type": "Data Store",
             "description": "",
-            "x": -144.59669856250713,
-            "y": 10.349305042382554,
+            "x": -185.05330177372966,
+            "y": -50.217770628595375,
             "url": {
                 "dialect": "sqlite",
                 "username": "",
@@ -52,13 +52,14 @@
                     "relative": true,
                     "path": ".spinetoolbox/items/input/input.sqlite"
                 }
-            }
+            },
+            "cancel_on_error": false
         },
         "output": {
             "type": "Data Store",
             "description": "",
-            "x": 144.02178026503108,
-            "y": 9.20036683889289,
+            "x": 177.6271422579099,
+            "y": -45.15243550755032,
             "url": {
                 "dialect": "sqlite",
                 "username": "",
@@ -70,16 +71,28 @@
                     "relative": true,
                     "path": ".spinetoolbox/items/output/output.sqlite"
                 }
-            }
+            },
+            "cancel_on_error": false
         },
         "SpineOpt": {
             "type": "Tool",
             "description": "",
-            "x": 2.6265099814832027,
-            "y": 9.150694957617446,
+            "x": 11.000692863135185,
+            "y": -48.742880363135185,
             "specification": "SpineOpt",
             "execute_in_work": false,
-            "cmd_line_args": []
+            "cmd_line_args": [
+                {
+                    "type": "path",
+                    "relative": false,
+                    "path": "{db_url@input}"
+                },
+                {
+                    "type": "path",
+                    "relative": false,
+                    "path": "{db_url@output}"
+                }
+            ]
         }
     }
 }

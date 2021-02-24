@@ -1,12 +1,11 @@
 # Spine Case Study A5
 
 ## Required
-* Spine Toolbox version 0.5 (later not tested)
+
+* Spine Toolbox version 0.5.36 orlater 
+* Julia 1.4 or later
+
 
 ## Getting started
 
-After cloning, run 
-
-    $ git submodule update --init
-    
-to get SpineOpt v0.4.0 into the project dir.
+Please follow [Case Study A5 tutorial](https://spine-toolbox.readthedocs.io/en/master/case_study_a5.html).
