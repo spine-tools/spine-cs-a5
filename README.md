@@ -2,7 +2,7 @@
 
 ## Required
 
-* Spine Toolbox version 0.5.36 orlater 
+* Spine Toolbox version 0.5.36 or later 
 * Julia 1.4 or later
 
 
