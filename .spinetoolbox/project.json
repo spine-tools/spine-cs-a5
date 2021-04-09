@@ -1,6 +1,6 @@
 {
     "project": {
-        "version": 5,
+        "version": 6,
         "name": "Case Study A5",
         "description": "",
         "specifications": {
@@ -83,14 +83,12 @@
             "execute_in_work": false,
             "cmd_line_args": [
                 {
-                    "type": "path",
-                    "relative": false,
-                    "path": "{db_url@input}"
+                    "type": "resource",
+                    "arg": "db_url@input"
                 },
                 {
-                    "type": "path",
-                    "relative": false,
-                    "path": "{db_url@output}"
+                    "type": "resource",
+                    "arg": "db_url@output"
                 }
             ]
         }
